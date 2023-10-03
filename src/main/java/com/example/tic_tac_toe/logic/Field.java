@@ -1,4 +1,4 @@
-package com.example.whole_game.game_logic;
+package com.example.tic_tac_toe.logic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,7 @@ public class Field {
 
     private char[] initBox() {
         char[] emptyBox = new char[9];
+
         for (byte i = 0; i < 9; i++) {
             emptyBox[i] = ' ';
         }

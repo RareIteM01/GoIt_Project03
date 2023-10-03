@@ -1,6 +1,6 @@
-package com.example.whole_game.starting_game;
+package com.example.tic_tac_toe.app;
 
-import com.example.whole_game.game_logic.Game;
+import com.example.tic_tac_toe.logic.Game;
 
 
 public class App {

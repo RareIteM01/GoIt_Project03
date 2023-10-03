@@ -1,4 +1,4 @@
-package com.example.whole_game.game_logic;
+package com.example.tic_tac_toe.logic;
 
 import java.util.List;
 import java.util.Random;
@@ -13,7 +13,7 @@ public class Game {
     public void startGame() {
         String winMessage = "Congratulations! You win!!!";
         String drawMessage = "IT'S THE DRAW!!!";
-        String looseMessage = "OOPSSS! You loose!!!";
+        String looseMessage = "OPSSS! You loose!!!";
         Field box = new Field();
         printGameRules();
         while (true) {

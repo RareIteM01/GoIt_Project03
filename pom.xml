@@ -5,7 +5,7 @@
     <artifactId>App</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>com.example.whole_game.starting_game.App</name>
+    <name>com.example.tic_tac_toe.app.App</name>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
