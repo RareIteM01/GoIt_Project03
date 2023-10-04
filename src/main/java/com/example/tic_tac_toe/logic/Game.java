@@ -5,31 +5,33 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-    Scanner scan = new Scanner(System.in);
-    Random random = new Random();
-
+    private static final String WIN_MESSAGE = "Congratulations! You win!!!";
+    private static final String DRAW_MESSAGE = "IT'S A DRAW!!!";
+    private static final String LOSE_MESSAGE = "OPSSS! You lose!!!";
     private static final String LINE = "-----------";
 
+    private Scanner scan = new Scanner(System.in);
+    private Random random = new Random();
+
+
     public void startGame() {
-        String winMessage = "Congratulations! You win!!!";
-        String drawMessage = "IT'S THE DRAW!!!";
-        String looseMessage = "OPSSS! You loose!!!";
         Field box = new Field();
         printGameRules();
+
         while (true) {
             if (inputPlayerAndCheckWin(box)) {
                 showBox(box);
-                System.out.println(winMessage);
+                System.out.println(WIN_MESSAGE);
                 return;
             }
             if (!box.boxAvailable()) {
                 showBox(box);
-                System.out.println(drawMessage);
+                System.out.println(DRAW_MESSAGE);
                 return;
             }
             if (doPCAndCheckWin(box)) {
                 showBox(box);
-                System.out.println(looseMessage);
+                System.out.println(LOSE_MESSAGE);
                 return;
             }
             showBox(box);
